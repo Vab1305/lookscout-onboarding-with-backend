@@ -1,0 +1,146 @@
+.main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4em 1em;
+}
+
+.form-wrapper {
+    border: .1em solid #DAE0E6;
+    border-radius: .8em;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.04);
+    width: 100%;
+    max-width: 40em;
+    overflow: hidden;
+    margin-top: 2em;
+}
+
+.form-top-section {
+    padding: 2em;
+    background-color: #FAFBFC;
+}
+
+.form-top-section__dotted-bar {
+    margin: 0 1.5em;
+    margin-bottom: -1.2em;
+    border-bottom: .2em dotted #DAE0E6;
+}
+
+.form-steps-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-step {
+    text-align: center;
+    font-size: .9em;
+    font-weight: 600;
+    color:#5F6D7E;
+}
+
+.form {
+    padding: 2em;
+    background-color: #fff;
+}
+
+.form label {
+    width: 100%;
+}
+
+.form label p {
+    margin-top: .5em;
+    margin-bottom: .5em;
+    font-size: .9em;
+}
+
+.form label p:last-of-type {
+    color: #5F6D7E;
+}
+
+.input-wrap {
+    display: flex;
+    align-items: center;
+}
+
+.input-wrap input {
+    width: 100%;
+    border: .1em solid #DAE0E6;
+    border-radius: .3em;
+    padding: .5em;
+    outline: none;
+}
+
+.input-wrap img {
+    margin-left: -2em;
+    cursor: pointer;
+}
+
+.password-wrap {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+}
+
+.terms-checkbox {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.terms-checkbox > input {
+    margin-right: .5em;
+    margin-bottom: 0;
+}
+
+.btn-wrap {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #FAFBFC;
+    padding: 1em 2em;
+}
+
+.btn-wrap > button {
+    background-color: #437EF7;
+    color: #fff;
+    padding: .5em 1em;
+    border-radius: .3em;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-wrap > button > p {
+    margin: 0;
+}
+
+.btn-wrap > button img {
+    margin-left: .3em;
+}
+
+@media (max-width: 576px) {
+    .password-wrap {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .btn-wrap {
+        padding: 1em;
+    }
+
+    .btn-wrap > button {
+        width: 100%;
+    }
+
+    .form-top-section, .form {
+        padding: 2em 1em;
+    }
+}
+
