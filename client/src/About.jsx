@@ -10,7 +10,7 @@ function About() {
     useEffect(() => {
       (async () => {
         try {
-          const res = await fetch('http://localhost:8000/products');
+          const res = await fetch('https://lookscout-onboarding-with-backend1.onrender.com/products');
 
           if(res.ok && res.status === 200) {
             const data = await res.json()
